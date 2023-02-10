@@ -15,7 +15,7 @@ it is specially good for `proc`s that have many lines of codes; as it is not muc
 assume you're reading someone's code, you come upon something like this:
 
 ```nim
-var cars = Table[string, bool]
+var cars: Table[string, bool]
 ```
 
 wow! what is it? is that a table for (`ownerName` -> `isWrecked`) or (`carName` -> `hasWheels`) ??
@@ -38,7 +38,7 @@ the `labeledtypes` package enables you to do this:
 
 ### scenario 1
 ```nim
-var cars = Table[!(name: string), !(isReady: bool)]
+var cars: Table[!(name: string), !(isReady: bool)]
 ```
 
 ### scenario 2
