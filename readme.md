@@ -55,6 +55,8 @@ func split(sum int) (x, y int)
 
 ## Installation
 ```
+nimble install labeledtypes
+# or
 nimble install https://github.com/hamidb80/labeledtypes
 ```
 
