@@ -46,6 +46,13 @@ var cars = Table[!(name: string), !(isReady: bool)]
 proc(bot: Telebot, update: Update): !(shouldEndWaiting: Future[bool])
 ```
 
+## Origin of the Idea
+I like the idea of [named return in golang](https://go.dev/tour/basics/7) (although it's as simple as my macro but still...):
+```go
+func split(sum int) (x, y int) { ...
+func join(path1, path2 string) (joined_path string) { ...
+```
+
 ## Other Solutions
 See other comments on this. [it was originally a proposal](https://github.com/nim-lang/RFCs/issues/507).
 
