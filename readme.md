@@ -49,6 +49,9 @@ proc(bot: Telebot, update: Update): !(shouldEndWaiting: Future[bool])
 ## Other Solutions
 See other comments on this. [it was originally a proposal](https://github.com/nim-lang/RFCs/issues/507).
 
+## Usage
+See `tests/test.nim`.
+
 ## Installation
 ```
 nimble install https://github.com/hamidb80/labeledtypes
