@@ -53,13 +53,17 @@ func join(paths ...string) (joined_path string)
 func split(sum int) (x, y int)
 ```
 
-## Other Solutions
-See other comments on this. [it was originally a proposal](https://github.com/nim-lang/RFCs/issues/507).
-
-## Usage
-See `tests/test.nim`.
-
 ## Installation
 ```
 nimble install https://github.com/hamidb80/labeledtypes
 ```
+
+## Usage
+See `tests/test.nim`.
+
+## Do not Like the `!` prefix?
+see `tests/talternative.nim`.
+
+## Other Solutions
+See other comments on this. [it was originally a proposal](https://github.com/nim-lang/RFCs/issues/507).
+
