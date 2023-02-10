@@ -5,9 +5,9 @@
 # Labeled Types
 ## Abstract
 
-Labeling types enables you to write more self-document code, both easy for you to review in the future and for other people to get the idea behind your algorithm.
+Labeling types enables you to write a more self-documented code, both easy for you to review in the future and for other people to get the idea behind your algorithm.
 
-it is specially good for `proc`s that have many lines of codes; as it is not much obvious what are they doing exactly...
+it is specially good for `proc`s that have many lines of codes; as it is not much obvious what they are doing exactly...
 
 ## Motivation
 
