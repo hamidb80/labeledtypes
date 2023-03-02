@@ -6,7 +6,7 @@ type
   Test2 = !(name: string, age: int)
   Test3 = !(name: string, age: int, weight: float)
 
-suite "correctness":
+suite "!":
   test "0 fields":
     check not compiles !()
 
@@ -18,3 +18,7 @@ suite "correctness":
 
   test "3 fields":
     check Test3 is tuple[name: string, age: int, weight: float]
+
+suite "!>":
+  test "0":
+    check string is (int !> (name: string))

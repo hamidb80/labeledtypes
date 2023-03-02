@@ -2,7 +2,6 @@ import std/macros
 
 
 macro `!`*(namedTuple): untyped =
-  ## type labeling
   ## converts to tuple if fields are more than 1
   ##
   ## `!(age: int)` => `int`
@@ -22,3 +21,11 @@ macro `!`*(namedTuple): untyped =
       temp.add newIdentDefs(pair[0], pair[1])
 
     temp
+
+template `!>`*(index, typee): untyped =
+  ## `(index: int) !> (name: string)` => `string`
+  ##
+  ## can be used in sequences like:
+  ##
+  ## `seq[(index: int) !> (name: string)]` => `seq[string]`
+  !typee
