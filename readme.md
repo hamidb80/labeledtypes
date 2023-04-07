@@ -1,4 +1,4 @@
-> Who respects a person ***because of his wealth***, 2/3 of his religion is gone - Imam Ali
+> The person who respects a person ***because of his wealth***, 2/3 of his religion is gone - Imam Ali
 > 
 > وَ مَنْ أَتَى غَنِيّاً فَتَوَاضَعَ لَهُ لِغِنَاهُ ذَهَبَ ثُلُثَا دِينِهِ - امام علی ع
 
