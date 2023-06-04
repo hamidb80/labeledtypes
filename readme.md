@@ -30,6 +30,12 @@ proc(bot: Telebot, update: Update): Future[bool]
 
 what is `Future[bool]` for? why a `bool`? you can't even guess it without reading the docs [RTFM right? :D]
 
+### scenario 3
+you've stored list of attedences' names by age.
+```nim
+let namesByAge: seq[seq[string]]
+```
+Isn't `seq[seq[string]]` like a 2D matrix of names ?!?!?! 😵
 
 ## Solution
 but if you could somehow just **_label your types_**, the code would be a lot more readable!
@@ -45,6 +51,12 @@ var cars: Table[!(name: string), !(isReady: bool)]
 ```nim
 proc(bot: Telebot, update: Update): !(shouldEndWaiting: Future[bool])
 ```
+
+### scenario 3
+```nim
+let namesByAge: seq[(age: int) !> (names: seq[string])] # converts to seq[seq[string]]
+```
+
 
 ## Origin of the Idea
 I like the idea of [named return in golang](https://go.dev/tour/basics/7):
