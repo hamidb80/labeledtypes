@@ -26,4 +26,5 @@ suite "!>":
     check string is (int !> (name: string))
 
 suite "!:":
-  check string is Test4
+  test "name !: stirng":
+    check string is Test4
