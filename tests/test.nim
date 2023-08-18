@@ -28,3 +28,10 @@ suite "!>":
 suite "!:":
   test "name !: stirng":
     check string is Test4
+
+  test "as return type":
+    proc localfn(a: int): hex !: string =
+      '#' & $a
+
+    check localFn(2) == "#2"
+    check localFn(2) is string
