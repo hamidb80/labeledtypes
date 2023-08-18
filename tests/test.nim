@@ -6,6 +6,8 @@ type
   Test2 = !(name: string, age: int)
   Test3 = !(name: string, age: int, weight: float)
 
+  Test4 = name !: string
+
 suite "!":
   test "0 fields":
     check not compiles !()
@@ -22,3 +24,6 @@ suite "!":
 suite "!>":
   test "0":
     check string is (int !> (name: string))
+
+suite "!:":
+  check string is Test4
