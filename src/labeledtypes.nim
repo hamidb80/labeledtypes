@@ -22,6 +22,11 @@ macro `!`*(namedTuple): untyped =
 
     temp
 
+template `!:`*(a, b): untyped = 
+  ## Usage: `name !: string` => `string`
+  ## Example: `Table[label !: string, age !: int]
+  b
+
 template `!>`*(index, typee): untyped =
   ## `(index: int) !> (name: string)` => `string`
   ##
