@@ -44,17 +44,21 @@ the `labeledtypes` package enables you to do this:
 
 ### scenario 1
 ```nim
+var cars: Table[name !: string, isReady !: bool]
+# or
 var cars: Table[!(name: string), !(isReady: bool)]
 ```
 
 ### scenario 2
 ```nim
+proc(bot: Telebot, update: Update): shouldEndWaiting !: Future[bool] 
+# or
 proc(bot: Telebot, update: Update): !(shouldEndWaiting: Future[bool])
 ```
 
 ### scenario 3
 ```nim
-let namesByAge: seq[(age: int) !> (names: seq[string])] # converts to seq[seq[string]]
+let namesByAge: seq[(age: int) !> (names: seq[string])] 
 ```
 
 
